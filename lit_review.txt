@@ -1,0 +1,78 @@
+Literature Review
+=================
+
+
+Visual Analytics
+----------------
+Visual analytics is defined as being 'the science of analytical reasoning
+facilitated by interactive visual interfaces' ( Thomas, 2005 ). It involves
+specialized tools, which are used to process and render datasets to facilitate
+extracting useful information. 
+
+- making sense of petabytes
+
+
+
+
+It is a relatively
+new topic, with an increasing importance.
+
+Architecture
+------------
+This project was designed following the 'MVC' ( Model View Controller )
+paradigm. The 'model' is at the core of the application; it maintains state
+information and manages the loaded data. The 'controller' is responsible for
+receiving user input, in the form of mouse and keyboard events; it notifies the
+model and any active views of what actions need to be performed in response. A
+'view' provides the visualisation of a dataset - for example, the GDP of all
+the countries in the world. Multiple views can be active simultaneously.
+
+Main components:
+- vector graphics - parsing and rendering basic primitives
+- views ( different ways of viewing 
+- downloading data ( ? )
+- query module - allows users to specify custom queries
+
+
+Infrastructure
+--------------
+This section discusses how the first prototype was built. The project is laid
+out following a fairly standard folder structure, encountered in many C++
+projects - the source files are placed inside the `src` folder, with the header
+files in `include`.  The `external` folder contains packages which are not part
+of the project, but are required - at the moment, this folder contains the
+`freeglut` package.
+
+=== Unit Testing
+The project is intended to implement 'unit testing' from the start, following a
+'Test Driven Development' process (TDD). It is not a new concept, being used
+since the 90's and introduced to the mainstream by Kent Beck in 2002 (Beck
+2002). It has been adopted by the Agile community, and is generally recognized
+as software development best practice. ( McConnell 2004, Chapter 22 ).
+
+But due to the inherent limitations of compiled languages, TDD turns out to be
+problematic area for C++. A number of unit testing frameworks exist for C++,
+which add to the complexity since one has to decide which one to use. The
+http://www.boost.org/[Boost libraries], which provide high-quality,
+peer-reviewed C++ libraries, also include a unit testing framework,
+http://www.boost.org/libs/test[boost test]. It was deemed appropriate since the
+boost libraries will be used anyway for regular expression support - therefore
+avoiding the need of installing additional libraries.
+
+=== Build system
+waf, make, vs
+
+=== Version control
+git
+
+First prototype
+---------------
+
+
+
+
+References
+----------
+http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf
+Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
+McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
