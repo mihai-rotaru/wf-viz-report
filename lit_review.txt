@@ -4,18 +4,41 @@ Literature Review
 
 Visual Analytics
 ----------------
-Visual analytics is defined as being 'the science of analytical reasoning
-facilitated by interactive visual interfaces' ( Thomas, 2005 ). It involves
-specialized tools, which are used to process and render datasets to facilitate
-extracting useful information. 
+Visual analytics is defined as the science of analytical reasoning facilitated
+by interactive visual interfaces. ( Thomas 2005, p.9 ) It enables users to
+synthesize useful information and extract insight from enormous amounts of data
+which is often ambiguous and even conflicting.  
 
-- making sense of petabytes
+To achieve this, analysts use visual analytics tools. In this manner, it
+becomes possible to analyze the data, formulate hypotheses and uncover patterns
+that would be very difficult to detect without a visual aid. Such specialized
+tools maximize the human capacity for analytical reasoning, making this process
+more efficient. This combines the strength of computational brute force
+available in today's machines with the human intelligence, creativity, capacity
+for reasoning and analysis.
+
+Aside from allowing analysts to focus their full cognitive and perceptual
+abilities on the analytical process, a visual analytics tool should allow the
+users to perform mathematical and statistical computations. Statistics are
+crucial in analyzing large datasets - as is often the case with visual
+analytics.
+
+Large datasets are not uncommon; it is estimated that in 2001 alone over
+
+ex: supernova
+
+which view ? 
 
 
+=== Geographical Information Systems
 
 
-It is a relatively
-new topic, with an increasing importance.
+Requirements Gathering and Analysis
+-----------------------------------
+As described in the previous section, visual analytics is a very broad
+topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
+in this context is no easy task. After agreeing with my supervisor on a
+
 
 Architecture
 ------------
@@ -27,7 +50,7 @@ model and any active views of what actions need to be performed in response. A
 'view' provides the visualisation of a dataset - for example, the GDP of all
 the countries in the world. Multiple views can be active simultaneously.
 
-Main components:
+.Main components:
 - vector graphics - parsing and rendering basic primitives
 - views ( different ways of viewing 
 - downloading data ( ? )
@@ -68,11 +91,13 @@ git
 First prototype
 ---------------
 
+=== Milestones
 
 
 
 References
 ----------
-http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf
-Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
-McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
+- Thomas, J (2005) http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf
+- Keim, D.A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
+- Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
+- McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
