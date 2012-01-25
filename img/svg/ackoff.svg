@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="771.41882"
+   height="149.41489"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="ackoff.svg"
+   inkscape:export-filename="D:\projekts\cia\doc\litearture_review\img\png\ackoff.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3883"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3885"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3887"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3889"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3891">
+        <feMergeNode
+           id="feMergeNode3893"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3895"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter3897"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3899"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3901"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3903"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3905">
+        <feMergeNode
+           id="feMergeNode3907"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3909"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3897-1"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur3899-7"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3901-4"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3903-0"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3905-9">
+        <feMergeNode
+           id="feMergeNode3907-4"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3909-8"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter3979"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3981"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3983"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3985"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3987">
+        <feMergeNode
+           id="feMergeNode3989"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3991"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3979-4"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur3981-2"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3983-3"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3985-2"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3987-2">
+        <feMergeNode
+           id="feMergeNode3989-1"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3991-6"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3897-8"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur3899-5"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3901-7"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3903-6"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3905-1">
+        <feMergeNode
+           id="feMergeNode3907-8"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3909-9"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3979-43"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur3981-1"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3983-2"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3985-3"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3987-3">
+        <feMergeNode
+           id="feMergeNode3989-4"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3991-1"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3897-8-3"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur3899-5-8"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3901-7-7"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0 " />
+      <feOffset
+         id="feOffset3903-6-4"
+         in="bluralpha"
+         dx="2"
+         dy="2"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3905-1-2">
+        <feMergeNode
+           id="feMergeNode3907-8-7"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3909-9-7"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="435.52924"
+     inkscape:cy="90.519518"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="742"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     fit-margin-top="20"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="20" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(98.573543,11.037636)">
+    <rect
+       style="fill:#ececec;stroke:#000000;stroke-width:0.74074078;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3897)"
+       id="rect3827"
+       width="74.751282"
+       height="28.284273"
+       x="27.274118"
+       y="65.08017"
+       rx="3.7037036"
+       ry="3.7037041"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="-28.766424"
+       y="92.786285"
+       id="text3837"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3839"
+         x="-28.766424"
+         y="92.786285">Data</tspan></text>
+    <rect
+       style="fill:#ececec;stroke:#000000;stroke-width:0.74074078;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3897-1)"
+       id="rect3827-8"
+       width="74.751282"
+       height="28.284273"
+       x="174.72697"
+       y="65.08017"
+       rx="3.7037036"
+       ry="3.7037041"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="146.11238"
+       y="93.017471"
+       id="text3837-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="146.11238"
+         y="93.017471"
+         id="tspan3970">Information</tspan></text>
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.74074072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3979)"
+       d="m 149.42115,72.687332 0.0312,4.092611 -40.09375,0 0,4.88473 40.09375,0 0.0312,4.092607 9.34375,-3.281625 9.375,-3.281637 -9.375,-3.243913 -9.40625,-3.262773 z"
+       id="rect3974"
+       inkscape:connector-curvature="0"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3993"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       transform="matrix(1.35,0,0,1.35,-89.587903,3.1574365)"><flowRegion
+         id="flowRegion3995"><rect
+           id="rect3997"
+           width="70.710678"
+           height="117.1777"
+           x="111.62186"
+           y="3.3187637"
+           style="font-size:11px" /></flowRegion><flowPara
+         id="flowPara3999">who ?</flowPara><flowPara
+         id="flowPara4001">what ?</flowPara><flowPara
+         id="flowPara4003">where ?</flowPara><flowPara
+         id="flowPara4007">when ?</flowPara><flowPara
+         id="flowPara4005" /></flowRoot>    <rect
+       style="fill:#ececec;stroke:#000000;stroke-width:0.74074078;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3897-8)"
+       id="rect3827-2"
+       width="74.751282"
+       height="28.284273"
+       x="320.43307"
+       y="65.08017"
+       rx="3.7037036"
+       ry="3.7037041"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="344.69092"
+       y="90.874374"
+       id="text3837-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3839-9"
+         x="344.69092"
+         y="90.874374">Knowledge</tspan></text>
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.74074072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3979-4)"
+       d="m 442.58011,72.687332 0.0312,4.092611 -40.09375,0 0,4.88473 40.09375,0 0.0312,4.092607 9.34375,-3.281625 9.375,-3.281637 -9.375,-3.243913 -9.40625,-3.262773 z"
+       id="rect3974-5"
+       inkscape:connector-curvature="0"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.74074072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3979-43)"
+       d="m 297.01895,72.687332 0.0312,4.092611 -40.09375,0 0,4.88473 40.09375,0 0.0312,4.092607 9.34375,-3.281625 9.375,-3.281637 -9.375,-3.243913 -9.40625,-3.262773 z"
+       id="rect3974-1"
+       inkscape:connector-curvature="0"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="260.20264"
+       y="73.09565"
+       id="text4162"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4164"
+         x="260.20264"
+         y="73.09565">how ?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="453.84891"
+       y="71.731941"
+       id="text4166"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4168"
+         x="453.84891"
+         y="71.731941">why ?</tspan></text>
+    <rect
+       style="fill:#ececec;stroke:#000000;stroke-width:0.74074078;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3897-8-3)"
+       id="rect3827-2-9"
+       width="74.751282"
+       height="28.284273"
+       x="472.24634"
+       y="65.08017"
+       rx="3.7037036"
+       ry="3.7037041"
+       transform="matrix(1.35,0,0,1.35,-100.49755,-21.389271)" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Myriad Pro Cond;-inkscape-font-specification:Myriad Pro Cond"
+       x="560.55481"
+       y="92.927361"
+       id="text3837-7-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3839-9-1"
+         x="560.55481"
+         y="92.927361">Wisdom</tspan></text>
+  </g>
+</svg>

@@ -1,15 +1,49 @@
 Literature Review
 =================
 
+Introduction
+------------
+This coursework aims to provide a literature review of the visual analytics field,
+with a focus on visualisations which describe geographical areas. It starts with a
+general overview of the filed, as a brief introduction. The following sections
+explore various aspects of visual analytics, both from a theoretical perspective
+as well as from a practical standpoint - investigating how the research might be
+applied to the project under development.
+
+The second main section provides the theoretical background which describes the
+project itself and the development process. Starting with requirements
+gathering and analysis, it continues with a section describing the high-level
+architeture, the employed design patterns and the system's divison into components.
+The following sections describe the infrastructure supporting the development process -
+the version control system, build system and how is unit testing implemented.
+
 
 Visual Analytics
 ----------------
 Visual analytics is defined as the science of analytical reasoning facilitated
-by interactive visual interfaces. ( Thomas 2005, p.9 ) It enables users to
+by interactive visual interfaces (Thomas 2005). It enables users to
 synthesize useful information and extract insight from enormous amounts of data
 which is often ambiguous and even conflicting.  
 
-To achieve this, analysts use visual analytics tools. In this manner, it
+The process by which one arrives at conclusions by analyzing the data has been
+described as a multi-phase process, which starts from the data and
+ends with acquiring wisdom (Ackoff 1989). According to the model proposed by Ackoff, one
+processes data into information by answering to the 'who', 'what', 'where' and
+'when' questions.  Information can be further processed into knowledge by
+answering the 'how' question. Finally, one can arrive to wisdom through an
+understanding of 'why'.
+
+[caption="Figure 1"]
+image::img/png/ackoff.png[]
+
+not so simple
+
+methods: dependent on type of data. Large ? 
+Large datasets are not uncommon; it is estimated that in 2001 alone over
+
+abstraction: visual
+
+In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
 becomes possible to analyze the data, formulate hypotheses and uncover patterns
 that would be very difficult to detect without a visual aid. Such specialized
 tools maximize the human capacity for analytical reasoning, making this process
@@ -17,21 +51,23 @@ more efficient. This combines the strength of computational brute force
 available in today's machines with the human intelligence, creativity, capacity
 for reasoning and analysis.
 
+
 Aside from allowing analysts to focus their full cognitive and perceptual
 abilities on the analytical process, a visual analytics tool should allow the
 users to perform mathematical and statistical computations. Statistics are
 crucial in analyzing large datasets - as is often the case with visual
 analytics.
 
-Large datasets are not uncommon; it is estimated that in 2001 alone over
 
 ex: supernova
 
-which view ? 
+which view ?
+
+color mapping 
 
 
 === Geographical Information Systems
-
+asasd
 
 Requirements Gathering and Analysis
 -----------------------------------
@@ -56,7 +92,6 @@ the countries in the world. Multiple views can be active simultaneously.
 - downloading data ( ? )
 - query module - allows users to specify custom queries
 
-
 Infrastructure
 --------------
 This section discusses how the first prototype was built. The project is laid
@@ -66,6 +101,12 @@ files in `include`.  The `external` folder contains packages which are not part
 of the project, but are required - at the moment, this folder contains the
 `freeglut` package.
 
+=== Version control
+git
+
+=== Build system
+waf, make, vs
+
 === Unit Testing
 The project is intended to implement 'unit testing' from the start, following a
 'Test Driven Development' process (TDD). It is not a new concept, being used
@@ -74,7 +115,7 @@ since the 90's and introduced to the mainstream by Kent Beck in 2002 (Beck
 as software development best practice. ( McConnell 2004, Chapter 22 ).
 
 But due to the inherent limitations of compiled languages, TDD turns out to be
-problematic area for C++. A number of unit testing frameworks exist for C++,
+problematic area for C\+\+. A number of unit testing frameworks exist for C\+\+,
 which add to the complexity since one has to decide which one to use. The
 http://www.boost.org/[Boost libraries], which provide high-quality,
 peer-reviewed C++ libraries, also include a unit testing framework,
@@ -82,22 +123,18 @@ http://www.boost.org/libs/test[boost test]. It was deemed appropriate since the
 boost libraries will be used anyway for regular expression support - therefore
 avoiding the need of installing additional libraries.
 
-=== Build system
-waf, make, vs
-
-=== Version control
-git
-
 First prototype
 ---------------
+prototype
 
 === Milestones
-
+1.0
 
 
 References
 ----------
 - Thomas, J (2005) http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf
+- Ackoff, R. L. (1989) "From data to wisdom". Journal of Applies Systems Analysis.
 - Keim, D.A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
 - Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
 - McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
