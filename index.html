@@ -899,6 +899,7 @@ information flowed through electronic channels in 2002 (Lyman 2003).</p></div>
 <h4 id="_types_of_information">2.2.1. Types of information</h4>
 <div class="paragraph"><p>TODO:
 sensors, etc</p></div>
+<div class="paragraph"><p>Classified:</p></div>
 <div class="paragraph"><p>Considering these facts, it becomes obvious that analyzing such datasets is a
 task which is difficult to accomplish without introducing abstraction layers.</p></div>
 </div>
@@ -906,11 +907,16 @@ task which is difficult to accomplish without introducing abstraction layers.</p
 <div class="sect2">
 <h3 id="_analyzing_the_datasets">2.3. Analyzing the datasets</h3>
 <div class="paragraph"><p>But having the ability to accumulate large amounts of data is only one stage in
-the long process of acquiring knowledge.
-- knowledge discovery in databases ( KDD ): involves <em>Data Mining</em> (DM) which is
-defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
-are enumerated from the data under acceptable computational efficiency limitations"</p></div>
+the long process of acquiring knowledge. Scientists have devised various methods
+of extracting insight from the gathered data, with a varying degree of automation.</p></div>
 <div class="ulist"><ul>
+<li>
+<p>
+knowledge discovery in databases ( KDD ): involves <em>Data Mining</em> (DM) which is
+defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
+are enumerated from the data under acceptable computational efficiency limitations"
+</p>
+</li>
 <li>
 <p>
 visual data mining ( VDM )
@@ -950,9 +956,82 @@ improvements, and prevent common mistakes - which he illustrates with real-life
 examples. According to Tufte, when designing a visualisations, one should strive
 to "escape flatland" - find ways to convey more than the two dimensions normally
 available on paper and screens.</p></div>
+<div class="ulist"><div class="title">Visualisations types</div><ul>
+<li>
+<p>
+describing data
+</p>
+</li>
+<li>
+<p>
+viewing relationships: between observations (network diagram), and variables (scatterplots)
+</p>
+</li>
+<li>
+<p>
+picturing data
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+Chernoff Faces
+</p>
+</li>
+<li>
+<p>
+mathematical Shapes: star glyphs, superquadric shapes
+</p>
+</li>
+<li>
+<p>
+daisy maps
+</p>
+</li>
+<li>
+<p>
+heat maps
+</p>
+</li>
+<li>
+<p>
+tag clouds
+</p>
+</li>
+</ol></div>
+</li>
+<li>
+<p>
+temporal visualisation
+</p>
+</li>
+<li>
+<p>
+spatial visualisation
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+natural layout: geo-spatial map
+</p>
+</li>
+<li>
+<p>
+abstract layout: artificial landscape map
+</p>
+</li>
+</ol></div>
+</li>
+<li>
+<p>
+spatial-temporal visualisation
+</p>
+</li>
+</ul></div>
 </div>
 <div class="sect2">
 <h3 id="_visual_analytics_2">2.5. Visual Analytics</h3>
+<div class="paragraph"><p>There are three major goals of visualization, namely a) presentation, b)
+confirmatory analysis, and c) exploratory analysis. (Keim, 2008, p.3)</p></div>
 <div class="paragraph"><p>In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
 becomes possible to analyze the data, formulate hypotheses and uncover patterns
 that would be very difficult to detect without a visual aid. Such specialized
@@ -966,18 +1045,21 @@ users to perform mathematical and statistical computations. Statistics are
 crucial in analyzing large datasets - as is often the case with visual
 analytics.</p></div>
 <div class="paragraph"><p>ex: supernova</p></div>
+<div class="sect3">
+<h4 id="_visual_analytics_process">2.5.1. Visual Analytics Process</h4>
 <div class="paragraph"><p>interactive:
 Keith 2006:
 Analyse First -
 Show the Important -
 Zoom, Filter and Analyse Further -
 Details on Demand</p></div>
-<div class="paragraph"><p>which view ?</p></div>
+<div class="paragraph"><p>TODO: add an image based on (Keim, 2008 Fig.2)</p></div>
 <div class="paragraph"><p>color mapping</p></div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_geographical_information_systems">2.6. Geographical Information Systems</h3>
-<div class="paragraph"><p>asasd</p></div>
+<h3 id="_geo_spatial_visualization">2.6. Geo-spatial Visualization</h3>
+<div class="paragraph"><p>TODO: add information specific to geo-spatial visualizations</p></div>
 </div>
 </div>
 </div>
@@ -986,7 +1068,48 @@ Details on Demand</p></div>
 <div class="sectionbody">
 <div class="paragraph"><p>As described in the previous section, visual analytics is a very broad
 topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
-in this context is no easy task. After agreeing with my supervisor on a</p></div>
+in this context is no easy task. After carefully considering the available
+options and consulting with my supervisor, the following requirements have been
+identified:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+the system should be able to load datasets - in the form of XML files
+</p>
+</li>
+<li>
+<p>
+display data on a geo-spatial heat map
+</p>
+</li>
+<li>
+<p>
+provide a timeline-based views for datasets which have time information
+</p>
+</li>
+<li>
+<p>
+allow the user to select visualisation parameters - which area to view, parameters to
+  display, zoom level, the period of time to display
+</p>
+</li>
+<li>
+<p>
+provide additional visualisation methods: graph, scatterplot, star glyphs, pie charts
+</p>
+</li>
+<li>
+<p>
+perform statistical computations: mean, standard deviation
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>These requirements provide the general direction of the project, but they are not
+set in stone and may be adjusted to accommodate the evolution of the project. Some
+features might prove too difficult to implement and be dropped, or might have a
+low return on investment - in other words, implementing it would be too costly and
+the value it provides does not justify the effort. Other features might be added,
+if they would add value to the project.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -1129,7 +1252,7 @@ McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Constructi
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2012-01-30 10:04:27 GMT
+Last updated 2012-01-30 11:22:12 GMT
 </div>
 </div>
 </body>
