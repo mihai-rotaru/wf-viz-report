@@ -13,10 +13,11 @@ applied to the project under development.
 The second main section provides the theoretical background which describes the
 project itself and the development process. Starting with requirements
 gathering and analysis, it continues with a section describing the high-level
-architeture, the employed design patterns and the system's divison into components.
+architecture, the employed design patterns and the system's division into components.
 The following sections describe the infrastructure supporting the development process -
 the version control system, build system and how is unit testing implemented.
-
+The last section describes the first prototype - what challenges were encountered,
+and how was the architecture altered to accommodate changing requirements.
 
 Visual Analytics
 ----------------
@@ -25,6 +26,7 @@ by interactive visual interfaces (Thomas 2005). It enables users to
 synthesize useful information and extract insight from enormous amounts of data
 which is often ambiguous and even conflicting.  
 
+=== Analytical Reasoning
 The process by which one arrives at conclusions by analyzing the data has been
 described as a multi-phase process, which starts from the data and
 ends with acquiring wisdom (Ackoff 1989). According to the model proposed by Ackoff, one
@@ -36,13 +38,75 @@ understanding of 'why'.
 [caption="Figure 1"]
 image::img/png/ackoff.png[]
 
-not so simple
+=== The Information Explosion
+The type type of tools and techniques used during this sense-making process
+vary, according to the dataset under investigation. Deriving insight from
+large, dynamic datasets requires a high-level, conceptual understanding of the
+data. Confronted with the information explosion which accompanied the arrival
+of the information age, analysts have to cope with ever increasing quantities
+of data.
 
-methods: dependent on type of data. Large ? 
-Large datasets are not uncommon; it is estimated that in 2001 alone over
+According to a study by Lyman and Varian, 5 exabytes (5 x 10^18^ bytes) of new
+stored information in the form of paper, film, and electronic media were
+produced in 2002 alone. The amount of stored information grew at a rate of 30%
+between 1999 and 2002. The study also estimates that another 18 exabytes of streaming
+information flowed through electronic channels in 2002 (Lyman 2003).
 
-abstraction: visual
 
+==== Types of information
+TODO: 
+sensors, etc
+
+Considering these facts, it becomes obvious that analyzing such datasets is a
+task which is difficult to accomplish without introducing abstraction layers.
+
+=== Analyzing the datasets
+But having the ability to accumulate large amounts of data is only one stage in
+the long process of acquiring knowledge. 
+- knowledge discovery in databases ( KDD ): involves 'Data Mining' (DM) which is
+defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
+are enumerated from the data under acceptable computational efficiency limitations"
+ 
+- visual data mining ( VDM )
+
+(Icke, 2009)
+
+=== Information Visualization
+One of the most efficient methods of approaching the task of analyzing such
+datasets, is employing some form of visualization. Such visualizations come in
+different shapes and forms, the most common being maps, diagrams and graphs.
+These methods are not a recent development - the field of 'data visualization'
+has existed long before the information age; a detailed account of it's history
+until recent times is given in (Friendly, 2006).
+
+The area of data visualisation has existed since the 1800's (Icke, 2009), but
+has been popularized by Edward Tufte's seminal 1990 book, "Envisioning Information"
+and his later publications. In (Tufte, 1990), the author identifies and dissects,
+in a scholarly manner - few words, dense with meaning and thoroughly referenced -
+issues which are just as relevant today, as when the book was published.
+
+Tufte identifies many of the principles which underpin good data visualisation,
+and which one would do best to keep in mind while developing a system intended
+for such use cases. Of course, it is difficult to define exactly what constitutes
+a 'good visualisation', since the insight derived from a particular visualisation
+may vary depending on the psychological traits of the individual performing the
+analysis. 
+
+Indeed, this fact is recognized and embraced (Thomas, 2005); often the
+available information has such a dynamic and complex nature, that it cannot be
+effectively tackled by individual analysts, working in isolation (p.60). This
+is requirement is known as the need for 'human scalability' - a system aiming
+to provide for efficient analysis of large, complex and dynamic datasets should
+ensure that users will be able to share information, perform cooperative
+analysis and synthesis.
+
+However, the principles and guidelines outlined by Tufte provide demonstrable
+improvements, and prevent common mistakes - which he illustrates with real-life
+examples. According to Tufte, when designing a visualisations, one should strive
+to "escape flatland" - find ways to convey more than the two dimensions normally
+available on paper and screens. 
+
+=== Visual Analytics
 In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
 becomes possible to analyze the data, formulate hypotheses and uncover patterns
 that would be very difficult to detect without a visual aid. Such specialized
@@ -51,15 +115,20 @@ more efficient. This combines the strength of computational brute force
 available in today's machines with the human intelligence, creativity, capacity
 for reasoning and analysis.
 
-
 Aside from allowing analysts to focus their full cognitive and perceptual
 abilities on the analytical process, a visual analytics tool should allow the
 users to perform mathematical and statistical computations. Statistics are
 crucial in analyzing large datasets - as is often the case with visual
 analytics.
 
-
 ex: supernova
+
+interactive:
+Keith 2006:
+Analyse First -
+Show the Important -
+Zoom, Filter and Analyse Further -
+Details on Demand
 
 which view ?
 
@@ -133,8 +202,13 @@ prototype
 
 References
 ----------
-- Thomas, J (2005) http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf
+- Thomas, J (2005) "Illuminating the path". Available from: http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf [ accessed 26th of Jan 2012 ]
 - Ackoff, R. L. (1989) "From data to wisdom". Journal of Applies Systems Analysis.
-- Keim, D.A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
+- Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
+- Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
+- Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
+- Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf [ accessed 26th of Jan 2012 ]
+- Tufte, E. (1990) "Envisioning Information". Graphics Press.
+- Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
 - Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
 - McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
