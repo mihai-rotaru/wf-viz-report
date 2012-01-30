@@ -165,7 +165,17 @@ Requirements Gathering and Analysis
 -----------------------------------
 As described in the previous section, visual analytics is a very broad
 topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
-in this context is no easy task. After agreeing with my supervisor on a
+in this context is no easy task. After carefully considering the available
+options and consulting with my supervisor, the following requirements have been
+identified:
+
+- the system should be able to load datasets - in the form of XML files
+- display data on a geo-spatial heat map
+- provide a timeline-based views for datasets which have time information
+- allow the user to select visualisation parameters - which area to view, parameters to
+  display, zoom level, the period of time to display
+- provide additional visualisation methods: graph, scatterplot, star glyphs, pie charts
+- perform statistical computations: mean, standard deviation
 
 Architecture
 ------------
