@@ -158,8 +158,8 @@ TODO: add an image based on (Keim, 2008 Fig.2)
 color mapping 
 
 
-=== Geographical Information Systems
-asasd
+=== Geo-spatial Visualization
+TODO: add information specific to geo-spatial visualizations
 
 Requirements Gathering and Analysis
 -----------------------------------
@@ -176,6 +176,13 @@ identified:
   display, zoom level, the period of time to display
 - provide additional visualisation methods: graph, scatterplot, star glyphs, pie charts
 - perform statistical computations: mean, standard deviation
+
+These requirements provide the general direction of the project, but they are not
+set in stone and may be adjusted to accommodate the evolution of the project. Some
+features might prove too difficult to implement and be dropped, or might have a
+low return on investment - in other words, implementing it would be too costly and
+the value it provides does not justify the effort. Other features might be added,
+if they would add value to the project.
 
 Architecture
 ------------
