@@ -57,12 +57,16 @@ information flowed through electronic channels in 2002 (Lyman 2003).
 TODO: 
 sensors, etc
 
+Classified:
+
 Considering these facts, it becomes obvious that analyzing such datasets is a
 task which is difficult to accomplish without introducing abstraction layers.
 
 === Analyzing the datasets
 But having the ability to accumulate large amounts of data is only one stage in
-the long process of acquiring knowledge. 
+the long process of acquiring knowledge. Scientists have devised various methods
+of extracting insight from the gathered data, with a varying degree of automation.
+
 - knowledge discovery in databases ( KDD ): involves 'Data Mining' (DM) which is
 defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
 are enumerated from the data under acceptable computational efficiency limitations"
@@ -106,7 +110,25 @@ examples. According to Tufte, when designing a visualisations, one should strive
 to "escape flatland" - find ways to convey more than the two dimensions normally
 available on paper and screens. 
 
+.Visualisations types
+- describing data
+- viewing relationships: between observations (network diagram), and variables (scatterplots)
+- picturing data
+    - Chernoff Faces
+    - mathematical Shapes: star glyphs, superquadric shapes
+    - daisy maps
+    - heat maps
+    - tag clouds 
+- temporal visualisation
+- spatial visualisation
+    - natural layout: geo-spatial map
+    - abstract layout: artificial landscape map
+- spatial-temporal visualisation
+
 === Visual Analytics
+There are three major goals of visualization, namely a) presentation, b)
+confirmatory analysis, and c) exploratory analysis. (Keim, 2008, p.3)
+
 In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
 becomes possible to analyze the data, formulate hypotheses and uncover patterns
 that would be very difficult to detect without a visual aid. Such specialized
@@ -123,6 +145,7 @@ analytics.
 
 ex: supernova
 
+==== Visual Analytics Process
 interactive:
 Keith 2006:
 Analyse First -
@@ -130,7 +153,7 @@ Show the Important -
 Zoom, Filter and Analyse Further -
 Details on Demand
 
-which view ?
+TODO: add an image based on (Keim, 2008 Fig.2)
 
 color mapping 
 
@@ -143,7 +166,6 @@ Requirements Gathering and Analysis
 As described in the previous section, visual analytics is a very broad
 topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
 in this context is no easy task. After agreeing with my supervisor on a
-
 
 Architecture
 ------------
@@ -198,7 +220,6 @@ prototype
 
 === Milestones
 1.0
-
 
 References
 ----------
