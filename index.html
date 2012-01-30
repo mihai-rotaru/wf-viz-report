@@ -1,1 +1,1136 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="AsciiDoc 8.6.6">
+<title>Literature Review</title>
+<style type="text/css">
+/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
+
+/* Default font. */
+body {
+  font-family: Georgia,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+h5 {
+  font-size: 1.0em;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#email {
+}
+#revnumber, #revdate, #revremark {
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #777777;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toc {
+  margin-bottom: 2.5em;
+}
+
+#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+
+/*
+ * xhtml11 specific
+ *
+ * */
+
+tt {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
+
+div.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+/*
+ * html5 specific
+ *
+ * */
+
+.monospaced {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #527bbd;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #527bbd;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/*
+ * manpage specific
+ *
+ * */
+
+body.manpage h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+}
+body.manpage h2 {
+  border-style: none;
+}
+body.manpage div.sectionbody {
+  margin-left: 3em;
+}
+
+@media print {
+  body.manpage div#toc { display: none; }
+}
+
+
+/*
+ * Theme specific overrides of the preceding (asciidoc.css) CSS.
+ *
+ */
+body {
+  font-family: Garamond, Georgia, serif;
+  font-size: 17px;
+  color: #3E4349;
+  line-height: 1.3em;
+}
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Garmond, Georgia, serif;
+  font-weight: normal;
+  border-bottom-width: 0;
+  color: #3E4349;
+}
+div.title, caption.title { color: #596673; font-weight: bold; }
+h1 { font-size: 240%; }
+h2 { font-size: 180%; }
+h3 { font-size: 150%; }
+h4 { font-size: 130%; }
+h5 { font-size: 115%; }
+h6 { font-size: 100%; }
+#header h1 { margin-top: 0; }
+#toc {
+  color: #444444;
+  line-height: 1.5;
+  padding-top: 1.5em;
+}
+#toctitle {
+  font-size: 20px;
+}
+#toc a {
+    border-bottom: 1px dotted #999999;
+    color: #444444 !important;
+    text-decoration: none !important;
+}
+#toc a:hover {
+    border-bottom: 1px solid #6D4100;
+    color: #6D4100 !important;
+    text-decoration: none !important;
+}
+div.toclevel1 { margin-top: 0.2em; font-size: 16px; }
+div.toclevel2 { margin-top: 0.15em; font-size: 14px; }
+em, dt, td.hdlist1 { color: black; }
+strong { color: #3E4349; }
+a { color: #004B6B; text-decoration: none; border-bottom: 1px dotted #004B6B; }
+a:visited { color: #615FA0; border-bottom: 1px dotted #615FA0; }
+a:hover { color: #6D4100; border-bottom: 1px solid #6D4100; }
+div.tableblock > table, table.tableblock { border: 3px solid #E8E8E8; }
+th.tableblock, td.tableblock { border: 1px solid #E8E8E8; }
+ul > li > * { color: #3E4349; }
+pre, tt, .monospaced { font-family: Consolas,Menlo,'Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace; }
+tt, .monospaced { font-size: 0.9em; color: black;
+}
+div.exampleblock > div.content, div.sidebarblock > div.content, div.listingblock > div.content { border-width: 0 0 0 3px; border-color: #E8E8E8; }
+div.verseblock { border-left-width: 0; margin-left: 3em; }
+div.quoteblock { border-left-width: 3px; margin-left: 0; margin-right: 0;}
+div.admonitionblock td.content { border-left: 3px solid #E8E8E8; }
+@media screen {
+  body {
+    max-width: 50em; /* approximately 80 characters wide */
+    margin-left: 16em;
+  }
+
+  #toc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 13em;
+    padding: 0.5em;
+    padding-bottom: 1.5em;
+    margin: 0;
+    overflow: auto;
+    border-right: 3px solid #f8f8f8;
+    background-color: white;
+  }
+
+  #toc .toclevel1 {
+    margin-top: 0.5em;
+  }
+
+  #toc .toclevel2 {
+    margin-top: 0.25em;
+    display: list-item;
+    color: #aaaaaa;
+  }
+
+  #toctitle {
+    margin-top: 0.5em;
+  }
+}
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>Literature Review</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This coursework aims to provide a literature review of the visual analytics field,
+with a focus on visualisations which describe geographical areas. It starts with a
+general overview of the filed, as a brief introduction. The following sections
+explore various aspects of visual analytics, both from a theoretical perspective
+as well as from a practical standpoint - investigating how the research might be
+applied to the project under development.</p></div>
+<div class="paragraph"><p>The second main section provides the theoretical background which describes the
+project itself and the development process. Starting with requirements
+gathering and analysis, it continues with a section describing the high-level
+architecture, the employed design patterns and the system&#8217;s division into components.
+The following sections describe the infrastructure supporting the development process -
+the version control system, build system and how is unit testing implemented.
+The last section describes the first prototype - what challenges were encountered,
+and how was the architecture altered to accommodate changing requirements.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_visual_analytics">2. Visual Analytics</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Visual analytics is defined as the science of analytical reasoning facilitated
+by interactive visual interfaces (Thomas 2005). It enables users to
+synthesize useful information and extract insight from enormous amounts of data
+which is often ambiguous and even conflicting.</p></div>
+<div class="sect2">
+<h3 id="_analytical_reasoning">2.1. Analytical Reasoning</h3>
+<div class="paragraph"><p>The process by which one arrives at conclusions by analyzing the data has been
+described as a multi-phase process, which starts from the data and
+ends with acquiring wisdom (Ackoff 1989). According to the model proposed by Ackoff, one
+processes data into information by answering to the <em>who</em>, <em>what</em>, <em>where</em> and
+<em>when</em> questions.  Information can be further processed into knowledge by
+answering the <em>how</em> question. Finally, one can arrive to wisdom through an
+understanding of <em>why</em>.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="img/png/ackoff.png" alt="img/png/ackoff.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_information_explosion">2.2. The Information Explosion</h3>
+<div class="paragraph"><p>The type type of tools and techniques used during this sense-making process
+vary, according to the dataset under investigation. Deriving insight from
+large, dynamic datasets requires a high-level, conceptual understanding of the
+data. Confronted with the information explosion which accompanied the arrival
+of the information age, analysts have to cope with ever increasing quantities
+of data.</p></div>
+<div class="paragraph"><p>According to a study by Lyman and Varian, 5 exabytes (5 x 10<sup>18</sup> bytes) of new
+stored information in the form of paper, film, and electronic media were
+produced in 2002 alone. The amount of stored information grew at a rate of 30%
+between 1999 and 2002. The study also estimates that another 18 exabytes of streaming
+information flowed through electronic channels in 2002 (Lyman 2003).</p></div>
+<div class="sect3">
+<h4 id="_types_of_information">2.2.1. Types of information</h4>
+<div class="paragraph"><p>TODO:
+sensors, etc</p></div>
+<div class="paragraph"><p>Considering these facts, it becomes obvious that analyzing such datasets is a
+task which is difficult to accomplish without introducing abstraction layers.</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_analyzing_the_datasets">2.3. Analyzing the datasets</h3>
+<div class="paragraph"><p>But having the ability to accumulate large amounts of data is only one stage in
+the long process of acquiring knowledge.
+- knowledge discovery in databases ( KDD ): involves <em>Data Mining</em> (DM) which is
+defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
+are enumerated from the data under acceptable computational efficiency limitations"</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+visual data mining ( VDM )
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>(Icke, 2009)</p></div>
+</div>
+<div class="sect2">
+<h3 id="_information_visualization">2.4. Information Visualization</h3>
+<div class="paragraph"><p>One of the most efficient methods of approaching the task of analyzing such
+datasets, is employing some form of visualization. Such visualizations come in
+different shapes and forms, the most common being maps, diagrams and graphs.
+These methods are not a recent development - the field of <em>data visualization</em>
+has existed long before the information age; a detailed account of it&#8217;s history
+until recent times is given in (Friendly, 2006).</p></div>
+<div class="paragraph"><p>The area of data visualisation has existed since the 1800&#8217;s (Icke, 2009), but
+has been popularized by Edward Tufte&#8217;s seminal 1990 book, "Envisioning Information"
+and his later publications. In (Tufte, 1990), the author identifies and dissects,
+in a scholarly manner - few words, dense with meaning and thoroughly referenced -
+issues which are just as relevant today, as when the book was published.</p></div>
+<div class="paragraph"><p>Tufte identifies many of the principles which underpin good data visualisation,
+and which one would do best to keep in mind while developing a system intended
+for such use cases. Of course, it is difficult to define exactly what constitutes
+a <em>good visualisation</em>, since the insight derived from a particular visualisation
+may vary depending on the psychological traits of the individual performing the
+analysis.</p></div>
+<div class="paragraph"><p>Indeed, this fact is recognized and embraced (Thomas, 2005); often the
+available information has such a dynamic and complex nature, that it cannot be
+effectively tackled by individual analysts, working in isolation (p.60). This
+is requirement is known as the need for <em>human scalability</em> - a system aiming
+to provide for efficient analysis of large, complex and dynamic datasets should
+ensure that users will be able to share information, perform cooperative
+analysis and synthesis.</p></div>
+<div class="paragraph"><p>However, the principles and guidelines outlined by Tufte provide demonstrable
+improvements, and prevent common mistakes - which he illustrates with real-life
+examples. According to Tufte, when designing a visualisations, one should strive
+to "escape flatland" - find ways to convey more than the two dimensions normally
+available on paper and screens.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_visual_analytics_2">2.5. Visual Analytics</h3>
+<div class="paragraph"><p>In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
+becomes possible to analyze the data, formulate hypotheses and uncover patterns
+that would be very difficult to detect without a visual aid. Such specialized
+tools maximize the human capacity for analytical reasoning, making this process
+more efficient. This combines the strength of computational brute force
+available in today&#8217;s machines with the human intelligence, creativity, capacity
+for reasoning and analysis.</p></div>
+<div class="paragraph"><p>Aside from allowing analysts to focus their full cognitive and perceptual
+abilities on the analytical process, a visual analytics tool should allow the
+users to perform mathematical and statistical computations. Statistics are
+crucial in analyzing large datasets - as is often the case with visual
+analytics.</p></div>
+<div class="paragraph"><p>ex: supernova</p></div>
+<div class="paragraph"><p>interactive:
+Keith 2006:
+Analyse First -
+Show the Important -
+Zoom, Filter and Analyse Further -
+Details on Demand</p></div>
+<div class="paragraph"><p>which view ?</p></div>
+<div class="paragraph"><p>color mapping</p></div>
+</div>
+<div class="sect2">
+<h3 id="_geographical_information_systems">2.6. Geographical Information Systems</h3>
+<div class="paragraph"><p>asasd</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements_gathering_and_analysis">3. Requirements Gathering and Analysis</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>As described in the previous section, visual analytics is a very broad
+topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
+in this context is no easy task. After agreeing with my supervisor on a</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture">4. Architecture</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This project was designed following the <em>MVC</em> ( Model View Controller )
+paradigm. The <em>model</em> is at the core of the application; it maintains state
+information and manages the loaded data. The <em>controller</em> is responsible for
+receiving user input, in the form of mouse and keyboard events; it notifies the
+model and any active views of what actions need to be performed in response. A
+<em>view</em> provides the visualisation of a dataset - for example, the GDP of all
+the countries in the world. Multiple views can be active simultaneously.</p></div>
+<div class="ulist"><div class="title">Main components:</div><ul>
+<li>
+<p>
+vector graphics - parsing and rendering basic primitives
+</p>
+</li>
+<li>
+<p>
+views ( different ways of viewing
+</p>
+</li>
+<li>
+<p>
+downloading data ( ? )
+</p>
+</li>
+<li>
+<p>
+query module - allows users to specify custom queries
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_infrastructure">5. Infrastructure</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This section discusses how the first prototype was built. The project is laid
+out following a fairly standard folder structure, encountered in many C++
+projects - the source files are placed inside the <span class="monospaced">src</span> folder, with the header
+files in <span class="monospaced">include</span>.  The <span class="monospaced">external</span> folder contains packages which are not part
+of the project, but are required - at the moment, this folder contains the
+<span class="monospaced">freeglut</span> package.</p></div>
+<div class="sect2">
+<h3 id="_version_control">5.1. Version control</h3>
+<div class="paragraph"><p>git</p></div>
+</div>
+<div class="sect2">
+<h3 id="_build_system">5.2. Build system</h3>
+<div class="paragraph"><p>waf, make, vs</p></div>
+</div>
+<div class="sect2">
+<h3 id="_unit_testing">5.3. Unit Testing</h3>
+<div class="paragraph"><p>The project is intended to implement <em>unit testing</em> from the start, following a
+<em>Test Driven Development</em> process (TDD). It is not a new concept, being used
+since the 90&#8217;s and introduced to the mainstream by Kent Beck in 2002 (Beck
+2002). It has been adopted by the Agile community, and is generally recognized
+as software development best practice. ( McConnell 2004, Chapter 22 ).</p></div>
+<div class="paragraph"><p>But due to the inherent limitations of compiled languages, TDD turns out to be
+problematic area for C++. A number of unit testing frameworks exist for C++,
+which add to the complexity since one has to decide which one to use. The
+<a href="http://www.boost.org/">Boost libraries</a>, which provide high-quality,
+peer-reviewed C++ libraries, also include a unit testing framework,
+<a href="http://www.boost.org/libs/test">boost test</a>. It was deemed appropriate since the
+boost libraries will be used anyway for regular expression support - therefore
+avoiding the need of installing additional libraries.</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_prototype">6. First prototype</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>prototype</p></div>
+<div class="sect2">
+<h3 id="_milestones">6.1. Milestones</h3>
+<div class="paragraph"><p>1.0</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">7. References</h2>
+<div class="sectionbody">
+<div class="ulist"><ul>
+<li>
+<p>
+Thomas, J (2005) "Illuminating the path". Available from: <a href="http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf">http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf</a> [ accessed 26th of Jan 2012 ]
+</p>
+</li>
+<li>
+<p>
+Ackoff, R. L. (1989) "From data to wisdom". Journal of Applies Systems Analysis.
+</p>
+</li>
+<li>
+<p>
+Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
+</p>
+</li>
+<li>
+<p>
+Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: <a href="http://www2.sims.berkeley.edu/research/projects/how-much-info-2003">http://www2.sims.berkeley.edu/research/projects/how-much-info-2003</a> [ accessed 26th of Jan 2012 ]
+</p>
+</li>
+<li>
+<p>
+Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
+</p>
+</li>
+<li>
+<p>
+Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: <a href="http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf">http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf</a> [ accessed 26th of Jan 2012 ]
+</p>
+</li>
+<li>
+<p>
+Tufte, E. (1990) "Envisioning Information". Graphics Press.
+</p>
+</li>
+<li>
+<p>
+Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.
+</p>
+</li>
+<li>
+<p>
+Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.
+</p>
+</li>
+<li>
+<p>
+McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2012-01-30 10:04:27 GMT
+</div>
+</div>
+</body>
+</html>
