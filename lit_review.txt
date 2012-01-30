@@ -114,15 +114,15 @@ available on paper and screens.
 - describing data
 - viewing relationships: between observations (network diagram), and variables (scatterplots)
 - picturing data
-    - Chernoff Faces
-    - mathematical Shapes: star glyphs, superquadric shapes
-    - daisy maps
-    - heat maps
-    - tag clouds 
+    a. Chernoff Faces
+    b. mathematical Shapes: star glyphs, superquadric shapes
+    c. daisy maps
+    d. heat maps
+    e. tag clouds 
 - temporal visualisation
 - spatial visualisation
-    - natural layout: geo-spatial map
-    - abstract layout: artificial landscape map
+    a. natural layout: geo-spatial map
+    b. abstract layout: artificial landscape map
 - spatial-temporal visualisation
 
 === Visual Analytics
