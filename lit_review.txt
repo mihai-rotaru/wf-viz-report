@@ -3,21 +3,31 @@ Literature Review
 
 Introduction
 ------------
-This coursework aims to provide a literature review of the visual analytics field,
-with a focus on visualisations which describe geographical areas. It starts with a
-general overview of the filed, as a brief introduction. The following sections
-explore various aspects of visual analytics, both from a theoretical perspective
-as well as from a practical standpoint - investigating how the research might be
-applied to the project under development.
+This coursework has a twofold aim; firstly, to provide a literature review of
+the visual analytics field, with a focus on visualisations which describe
+geographical areas.  Secondly, it provides a description of the work done so
+far for the project, and the prototype which was produced.
+
+The first part starts with an introduction to analytical reasoning, and the
+'road to wisdom'. The next section discusses the type of data wich the
+information age produces, and the new challenges it poses for analysts. Ways of
+automated insight extraction from such datastes are described in the next
+section, followed by a description of 'information visualisation', and how it
+can enhance the process. This leads to the section on 'visual analytics',
+followed by a more specific aspect, concerning 'geo-spatial analysis'. These
+topics are explored both from a theoretical perspective as well as from a
+practical standpoint - investigating how the research might be applied to the
+project under development.
 
 The second main section provides the theoretical background which describes the
 project itself and the development process. Starting with requirements
 gathering and analysis, it continues with a section describing the high-level
-architecture, the employed design patterns and the system's division into components.
-The following sections describe the infrastructure supporting the development process -
-the version control system, build system and how is unit testing implemented.
-The last section describes the first prototype - what challenges were encountered,
-and how was the architecture altered to accommodate changing requirements.
+architecture, the employed design patterns and the system's division into
+components.  The following sections describe the infrastructure supporting the
+development process - the version control system, build system and how is unit
+testing implemented. The last section describes the first prototype - what
+challenges were encountered, and how was the architecture altered to
+accommodate changing requirements.
 
 Visual Analytics
 ----------------
@@ -51,6 +61,7 @@ stored information in the form of paper, film, and electronic media were
 produced in 2002 alone. The amount of stored information grew at a rate of 30%
 between 1999 and 2002. The study also estimates that another 18 exabytes of streaming
 information flowed through electronic channels in 2002 (Lyman 2003).
+
 
 
 ==== Types of information
