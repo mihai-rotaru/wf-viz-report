@@ -109,7 +109,7 @@ recording at the same time, and the recordings are kept for a certain amount of
 time.
 
 The collected data might also differ in terms of 'reliability' and
-'completness'. The software package must provide analysts with methods of
+'completness' (Keim, 2008). The software package must provide analysts with methods of
 mitigating these issues - for example, by inserting estimates in place of the
 missing or unreliable data. However, all of these decisions must be explicitly
 confirmed by the scientists, thus avoiding imprecise or flat wrong results.
@@ -124,22 +124,36 @@ becomes obvious that analyzing such datasets is a task which is difficult to
 accomplish without introducing abstraction layers.
 
 === Analyzing the datasets
-But having the ability to accumulate large amounts of data is only one stage in
-the long process of acquiring knowledge. Scientists have devised various methods
-of extracting insight from the gathered data, with a varying degree of automation.
+Having the ability to accumulate large amounts of data is only one stage in the
+long process of acquiring knowledge. Scientists have devised various methods of
+extracting insight from the gathered data, with a varying degree of automation.
 
-- knowledge discovery in databases ( KDD ): involves 'Data Mining' (DM) which is
-defined as "a step in the KDD process concerned with the algorithmic means by which patterns or models (structures)
-are enumerated from the data under acceptable computational efficiency limitations"
+One of the earliest developments in this field consists of 'knowledge discovery
+in databases (KDD)'. This concept is discussed in (Fayyad, 1996); it involves
+'Data Mining (DM)' as one of the most important steps, defined as "a step in
+the KDD process concerned with the algorithmic means by which patterns or
+models (structures) are enumerated from the data under acceptable computational
+efficiency limitations" ( Idem, p.5).
+
+KDD includes a number of other steps, besides DM, such as data preparation
+(pre-processing), data selection, data cleaning, incorporation of appropriate
+prior knowledge, and proper interpretation of the results of mining (Fayyad
+1996, p.3). KDD is defined as "the nontrivial process of identifying
+valid, novel, potentially useful, and ultimately understandable patterns in
+data" (Idem, p.5).
+
+But KDD suffers due to the high degree of automation and focus on mathematical
+models - one of the most important challenges being the generation of intuitive
+and accessible ways of conveying information to the users (Icke, 2009).
  
-- visual data mining ( VDM )
-
-(Icke, 2009)
-
 === Information Visualization
 One of the most efficient methods of approaching the task of analyzing such
-datasets, is employing some form of visualization. Such visualizations come in
-different shapes and forms, the most common being maps, diagrams and graphs.
+datasets, is employing some form of visualization. The concept of 'Visual data
+mining (VDM)' was introduced in the early 2000's, in recognition to the potential
+which lies in the human ability to recognise patterns and make sense of datasets
+which are presented visually (Keim, 2002).
+
+Such visualizations come in different shapes and forms, the most common being maps, diagrams and graphs.
 These methods are not a recent development - the field of 'data visualization'
 has existed long before the information age; a detailed account of it's history
 until recent times is given in (Friendly, 2006).
@@ -187,6 +201,8 @@ available on paper and screens.
 - spatial-temporal visualisation
 
 === Visual Analytics
+- started in the wake of 9/11, with the seminal work of Thomas et al 2005
+
 There are three major goals of visualization, namely a) presentation, b)
 confirmatory analysis, and c) exploratory analysis. (Keim, 2008, p.3)
 
@@ -306,7 +322,9 @@ References
 - Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
 - Ma, K.-L. et al (2005) "Scientific Discovery through Advanced Visualization"Journal of Physics Conference Series, 2005.
 - Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf [ accessed 26th of Jan 2012 ]
+- Fayyad, U. et al (1996) "From Data Mining to Knowledge Discovery in Databases". AI Magazine, 1996. Available on-line from: http://www.aaai.org/aitopics/assets/PDF/AIMag17-03-2-article.pdf [ accessed 26th of Jan 2012 ]
 - Tufte, E. (1990) "Envisioning Information". Graphics Press.
 - Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
+- Keim, D. A. (2002) "Information Visualization and Visual Data Mining". IEEE Transactions on Visualization and Computer Graphics; Volume 8 Issue 1, January 2002.Available on-line from: http://nm.merz-akademie.de/~jasmin.sipahi/drittes/images/Keim2002.pdf [ accessed 26th of Jan 2012 ]
 - Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
 - McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
