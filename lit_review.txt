@@ -84,9 +84,44 @@ in the methods used to extract insight from such datasets, and the associated
 challenges. The identified research areas range from scientific fields, such as
 astronomy and physics, to business and personal information management.
 
+The collected data can be classified, according to a number of criteria. It can
+be either 'structured' or 'unstructured'; the most common type of structured
+data being databases - such as MySQL databases, or CSV files. Many organisations
+construct and maintain large databases. The need to analyse and extract useful
+information from all these disparate databases might arise - it is desirable for
+the analytical software to provide the tools to accomplish this.
 
-Considering these facts, it becomes obvious that analyzing such datasets is a
-task which is difficult to accomplish without introducing abstraction layers.
+The most common types of unstructured data are documents and text files. The
+volume of such 'textual data' is ever increasing in volume, and steps have been
+taken in the direction of automating the process of identifying entities, and
+the relationships between them from textual data. Certain types of entities,
+such as email addresses, phone numbers and dates have been identified by
+software for some time, but an analytical software package should aid
+researches in finding information of a higher level - detecting patterns and
+relationships between them.
+
+The ubiquity of smartphones and digital cameras has brought forth an abundance
+of 'multimedia data' - images and video; another common source of video are
+surveillance cameras, such as the CCTV system in the United Kingdom. Even
+smaller scale surveillance systems, such as the one inside the offices of a
+business, will generate a lot of data, since there are multiple cameras
+recording at the same time, and the recordings are kept for a certain amount of
+time.
+
+The collected data might also differ in terms of 'reliability' and
+'completness'. The software package must provide analysts with methods of
+mitigating these issues - for example, by inserting estimates in place of the
+missing or unreliable data. However, all of these decisions must be explicitly
+confirmed by the scientists, thus avoiding imprecise or flat wrong results.
+
+But as the quantity of available data increases dramatically, the human
+capacity for analysis and reason remains largely unchanged. Although
+technological advances can enable us to tap into a higher percentage of human
+abilities, the rate at which this percentage increases is clearly dwarfed by
+the exponential growth of data which needs to be analysed. This situation is
+known as the 'information glut' (Thomas, 2005). Considering these facts, it
+becomes obvious that analyzing such datasets is a task which is difficult to
+accomplish without introducing abstraction layers.
 
 === Analyzing the datasets
 But having the ability to accumulate large amounts of data is only one stage in
