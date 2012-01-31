@@ -56,19 +56,34 @@ data. Confronted with the information explosion which accompanied the arrival
 of the information age, analysts have to cope with ever increasing quantities
 of data.
 
+==== Quantity
 According to a study by Lyman and Varian, 5 exabytes (5 x 10^18^ bytes) of new
 stored information in the form of paper, film, and electronic media were
 produced in 2002 alone. The amount of stored information grew at a rate of 30%
 between 1999 and 2002. The study also estimates that another 18 exabytes of streaming
 information flowed through electronic channels in 2002 (Lyman 2003).
 
-
+Scientists have increasingly large datasets to analyse; the quantity of data is
+growing not just on aggregate, but for individual tasks as well. While
+researching the data generated from a supernova simulation, Ma et al had to
+work with a dataset weighting 4 terabytes (Ma et al, 2009). Enormous datasets
+are also common in other fields, such as physics and astronomy; the need to
+cope with such datasets exists now, and current trends indicate that it will
+increase in the future. Considering the fact that methods of accumulating data
+become more accessible and common, and the consequent increase in available
+data, being able to cope with it is becoming increasingly important.
 
 ==== Types of information
-TODO: 
-sensors, etc
+Along with the staggering increases in 'quantity', the information age has
+brought forth a similar increase in the 'types' of data which has become
+available.
 
-Classified:
+Numerous scientific fields require analysing such datasets.  In (Keim, 2008),
+we find a detailed list of the fields which could benefit from an improvement
+in the methods used to extract insight from such datasets, and the associated
+challenges. The identified research areas range from scientific fields, such as
+astronomy and physics, to business and personal information management.
+
 
 Considering these facts, it becomes obvious that analyzing such datasets is a
 task which is difficult to accomplish without introducing abstraction layers.
@@ -153,8 +168,6 @@ abilities on the analytical process, a visual analytics tool should allow the
 users to perform mathematical and statistical computations. Statistics are
 crucial in analyzing large datasets - as is often the case with visual
 analytics.
-
-ex: supernova
 
 ==== Visual Analytics Process
 interactive:
@@ -256,6 +269,7 @@ References
 - Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
 - Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
 - Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
+- Ma, K.-L. et al (2005) "Scientific Discovery through Advanced Visualization"Journal of Physics Conference Series, 2005.
 - Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf [ accessed 26th of Jan 2012 ]
 - Tufte, E. (1990) "Envisioning Information". Graphics Press.
 - Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
