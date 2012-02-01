@@ -251,18 +251,33 @@ location. One example of such visualisations are tube maps, or circuit
 diagrams.
 
 === Visual Analytics
-- started in the wake of 9/11, with the seminal work of Thomas et al 2005
+There are three major goals of visualization, namely presentation, confirmatory
+analysis, and exploratory analysis. (Keim, 2008, p.3). Although visualisation
+methods have been developed and employed in analysis methods such as KDD and
+VDM, the field of 'visual analytics' emerged as it was recognised that the
+human-computer synergy can be taken a step further.
 
-There are three major goals of visualization, namely a) presentation, b)
-confirmatory analysis, and c) exploratory analysis. (Keim, 2008, p.3)
+Visual analytics started in the wake of 9/11, with the seminal work of Thomas
+et al which resulted in "Illuminating the Path: The Research and Development
+Agenda for Visual Analytics". The authors provide an overview of the challenges
+faced by data analysts, and highlight the aspects which make necessary a closer
+collaboration between computers and humans in order to cope with them. These
+aspects include the already discussed large datasets, with varying degrees
+of reliability and completeness, but a new element is introduced: 'urgency'.
 
-In the pursuit of wisdom, analysts use visual analytics tools. In this manner, it
-becomes possible to analyze the data, formulate hypotheses and uncover patterns
-that would be very difficult to detect without a visual aid. Such specialized
-tools maximize the human capacity for analytical reasoning, making this process
-more efficient. This combines the strength of computational brute force
-available in today's machines with the human intelligence, creativity, capacity
-for reasoning and analysis.
+Thomas et al start off their work by listing a number of scenarios which do not
+only require extracting insight from huge, heterogeneous datasets, but time
+becomes of utmost importance - in emergency situations such as terrorist attacks -
+the main focus of (Thomas, 2005) - it is very important to act swiftly. Therefore,
+it becomes very important to optimise the analytic process.
+
+In the pursuit of wisdom, analysts employ visual analytics software. In this
+manner, it becomes possible to analyze the data, formulate hypotheses and
+uncover patterns that would be very difficult to detect without a visual aid.
+Such specialized tools maximize the human capacity for analytical reasoning,
+making this process more efficient. This combines the strength of computational
+brute force available in today's machines with the human intelligence,
+creativity, capacity for reasoning and analysis.
 
 Aside from allowing analysts to focus their full cognitive and perceptual
 abilities on the analytical process, a visual analytics tool should allow the
@@ -271,20 +286,19 @@ crucial in analyzing large datasets - as is often the case with visual
 analytics.
 
 ==== Visual Analytics Process
-interactive:
-Keith 2006:
-Analyse First -
-Show the Important -
-Zoom, Filter and Analyse Further -
-Details on Demand
+One of the key differences between visual analytics and fields like KDD and VDM
+is that in visual analytics there is a greater focus on 'interactivity'. Indeed,
+the visual analytics process is often described as an 'iterative process', requiring
+input, feedback and guidance from the analyst. 
 
-TODO: add an image based on (Keim, 2008 Fig.2)
+A short and comprehensive mantra is provided in (Keim, 2006): "Analyse First -
+Show the Important - Zoom, Filter and Analyse Further - Details on Demand". The
+iterative and interactive nature of the process become obvious in this short
+description. This process is illustrated below, based on (Keim, 2008 Fig.2):
 
-color mapping 
-
-
-=== Geo-spatial Visualization
-TODO: add information specific to geo-spatial visualizations
+.The visual analytics process: S: sources, V: visualisation, H: hypothesis, I: insight.
+[caption="Figure 1: "]
+image::img/png/process.png[]
 
 Requirements Gathering and Analysis
 -----------------------------------
@@ -320,10 +334,12 @@ model and any active views of what actions need to be performed in response. A
 the countries in the world. Multiple views can be active simultaneously.
 
 .Main components:
-- vector graphics - parsing and rendering basic primitives
-- views ( different ways of viewing 
-- downloading data ( ? )
-- query module - allows users to specify custom queries
+- vector graphics - parsing and rendering basic primitives.
+- views - construct visualisations - heat maps, bar charts, etc.
+- data fetching - automatically discover and fetch data
+- query module - allows users to specify custom queries.
+- statistics - perform statistical computations
+- the user interface
 
 Infrastructure
 --------------
@@ -365,8 +381,8 @@ prototype
 
 References
 ----------
-- Thomas, J (2005) "Illuminating the path". Available from: http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf [ accessed 26th of Jan 2012 ]
-- Ackoff, R. L. (1989) "From data to wisdom". Journal of Applies Systems Analysis.
+- Thomas, J et al (2005) "Illuminating the path". Available from: http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf [ accessed 26th of Jan 2012 ]
+- Ackoff, R. L. (1989) "From data to wisdom". Journal of Applied Systems Analysis.
 - Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
 - Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
 - Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
