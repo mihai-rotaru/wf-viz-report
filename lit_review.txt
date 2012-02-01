@@ -149,27 +149,29 @@ and accessible ways of conveying information to the users (Icke, 2009).
 === Information Visualization
 One of the most efficient methods of approaching the task of analyzing such
 datasets, is employing some form of visualization. The concept of 'Visual data
-mining (VDM)' was introduced in the early 2000's, in recognition to the potential
-which lies in the human ability to recognise patterns and make sense of datasets
-which are presented visually (Keim, 2002).
+mining (VDM)' was introduced in the early 2000's, in recognition to the
+potential which lies in the human ability to recognise patterns and make sense
+of datasets which are presented visually (Keim, 2002).
 
-Such visualizations come in different shapes and forms, the most common being maps, diagrams and graphs.
-These methods are not a recent development - the field of 'data visualization'
-has existed long before the information age; a detailed account of it's history
-until recent times is given in (Friendly, 2006).
+Such visualizations come in different shapes and forms, the most common being
+maps, diagrams and graphs.  These methods are not a recent development - the
+field of 'data visualization' has existed long before the information age; a
+detailed account of it's history until recent times is given in (Friendly,
+2006).
 
 The area of data visualisation has existed since the 1800's (Icke, 2009), but
-has been popularized by Edward Tufte's seminal 1990 book, "Envisioning Information"
-and his later publications. In (Tufte, 1990), the author identifies and dissects,
-in a scholarly manner - few words, dense with meaning and thoroughly referenced -
-issues which are just as relevant today, as when the book was published.
+has been popularized by Edward Tufte's seminal 1990 book, "Envisioning
+Information" and his later publications. In (Tufte, 1990), the author
+identifies and dissects, in a scholarly manner - few words, dense with meaning
+and thoroughly referenced - issues which are just as relevant today, as when
+the book was published.
 
 Tufte identifies many of the principles which underpin good data visualisation,
 and which one would do best to keep in mind while developing a system intended
-for such use cases. Of course, it is difficult to define exactly what constitutes
-a 'good visualisation', since the insight derived from a particular visualisation
-may vary depending on the psychological traits of the individual performing the
-analysis. 
+for such use cases. Of course, it is difficult to define exactly what
+constitutes a 'good visualisation', since the insight derived from a particular
+visualisation may vary depending on the psychological traits of the individual
+performing the analysis. 
 
 Indeed, this fact is recognized and embraced (Thomas, 2005); often the
 available information has such a dynamic and complex nature, that it cannot be
@@ -181,24 +183,56 @@ analysis and synthesis.
 
 However, the principles and guidelines outlined by Tufte provide demonstrable
 improvements, and prevent common mistakes - which he illustrates with real-life
-examples. According to Tufte, when designing a visualisations, one should strive
-to "escape flatland" - find ways to convey more than the two dimensions normally
-available on paper and screens. 
+examples. According to Tufte, when designing a visualisations, one should
+strive to "escape flatland" - find ways to convey more than the two dimensions
+normally available on paper and screens, since data is often multi-dimensional
+(Tufte 1990,p.13).
 
 .Visualisations types
-- describing data
-- viewing relationships: between observations (network diagram), and variables (scatterplots)
-- picturing data
-    a. Chernoff Faces
-    b. mathematical Shapes: star glyphs, superquadric shapes
-    c. daisy maps
-    d. heat maps
-    e. tag clouds 
-- temporal visualisation
-- spatial visualisation
-    a. natural layout: geo-spatial map
-    b. abstract layout: artificial landscape map
-- spatial-temporal visualisation
+Numerous types of visualisations have been developed over the time.
+Visualisations can be classified by the goal which the analysts hope to
+achieve. One such type is represented by 'descriptive' visualisations, the
+primary goal being to describe the data. This can be achieved by performing
+statistical computations (e.g. mean, median) to identify the distribution of
+the data (for example, normal distribution). The most common visualisations in
+this context are 'bar charts', 'pie charts' and 'boxplots'. (Icke 2009, p.10)
+
+Often it is 'viewing relationships' that is the primary goal of the
+visualisation. One of the most efficient tools for providing a high-level
+overview of the relationships 'between observations' is the 'network diagram'.
+The other type of relationships is 'between variables'; one of the
+visualisations used for this purpose is the 'scatterplot' - which are
+especially useful when the dataset has multiple dimensions, by using multiple
+'scatterplots' in parallel.
+
+Numerous visualisations are available for 'picturing data'. Such methods aim to
+draw on the human capacity to discern patterns in visual data. One of the most
+famous data picturing method was introduced by Herman Chernoff in 1973, called
+'Chernoff faces'. Faces are used because humans have a natural ability for
+distinguishing faces, although the mechanism by which this happens is not yet
+well understood (Icke 2009, p.11). 'Mathematical shapes' can also be used, such
+as 'star glyphs'.  Other more intuitive techniques include 'heat maps' and 'tag
+clouds'.
+
+'Temporal visualisation' is usually achieved by using 'line graphs' - a simple
+and intuitive form of visualisation. But when more than two dimensions are
+involved, visualisations which are easily understandable become more difficult
+to achieve. One method of visualising such data is by combining line graphs
+with a star glyph - this method is most efficient when the graphs and the glyph
+are animated; this makes the otherwise difficult to grasp information much more
+accessible. A similar technique is discussed in (Tufte 1990, p.78):
+"simultaneous two-dimensional indexing of the multiplied image, flatland within
+flatland, significantly deepens displays, with little complication in reading".
+The method described by Tufte can also be successfully employed to represent
+spatial-temporal data.
+
+The most natural way of achieving 'spatial visualisation' is by using maps,
+which can convey information by using layers on top of the map. The data can be
+represented either on a 'natural layout' (geo-spatial map), or on an 'abstract
+layout' - when the emphasis is on attributes other than precise location in
+space, and those attributes can be better illustrated by abstracting the
+location. One example of such visualisations are tube maps, or circuit
+diagrams.
 
 === Visual Analytics
 - started in the wake of 9/11, with the seminal work of Thomas et al 2005
@@ -238,10 +272,10 @@ TODO: add information specific to geo-spatial visualizations
 
 Requirements Gathering and Analysis
 -----------------------------------
-As described in the previous section, visual analytics is a very broad
-topic, encompassing numerous sub-fields. Eliciting clear, concise requirements
-in this context is no easy task. After carefully considering the available
-options and consulting with my supervisor, the following requirements have been
+As described in the previous section, visual analytics is a very broad topic,
+encompassing numerous sub-fields. Eliciting clear, concise requirements in this
+context is no easy task. After carefully considering the available options and
+consulting with the project supervisor, the following requirements have been
 identified:
 
 - the system should be able to load datasets - in the form of XML files
