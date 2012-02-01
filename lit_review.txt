@@ -197,6 +197,10 @@ statistical computations (e.g. mean, median) to identify the distribution of
 the data (for example, normal distribution). The most common visualisations in
 this context are 'bar charts', 'pie charts' and 'boxplots'. (Icke 2009, p.10)
 
+.Example of a boxplot
+[caption="Figure 2: "]
+image::img/png/boxplot.png[]
+
 Often it is 'viewing relationships' that is the primary goal of the
 visualisation. One of the most efficient tools for providing a high-level
 overview of the relationships 'between observations' is the 'network diagram'.
@@ -204,6 +208,10 @@ The other type of relationships is 'between variables'; one of the
 visualisations used for this purpose is the 'scatterplot' - which are
 especially useful when the dataset has multiple dimensions, by using multiple
 'scatterplots' in parallel.
+
+.Example of a scatterplot
+[caption="Figure 2: "]
+image::img/png/scatterplot.png[]
 
 Numerous visualisations are available for 'picturing data'. Such methods aim to
 draw on the human capacity to discern patterns in visual data. One of the most
@@ -213,6 +221,10 @@ distinguishing faces, although the mechanism by which this happens is not yet
 well understood (Icke 2009, p.11). 'Mathematical shapes' can also be used, such
 as 'star glyphs'.  Other more intuitive techniques include 'heat maps' and 'tag
 clouds'.
+
+.Example of a heat map
+[caption="Figure 2: "]
+image::img/png/heat-map.png[]
 
 'Temporal visualisation' is usually achieved by using 'line graphs' - a simple
 and intuitive form of visualisation. But when more than two dimensions are
@@ -225,6 +237,10 @@ accessible. A similar technique is discussed in (Tufte 1990, p.78):
 flatland, significantly deepens displays, with little complication in reading".
 The method described by Tufte can also be successfully employed to represent
 spatial-temporal data.
+
+.Line graph and animation view
+[caption="Figure 2: "]
+image::img/png/time-space-glyph.png[]
 
 The most natural way of achieving 'spatial visualisation' is by using maps,
 which can convey information by using layers on top of the map. The data can be
