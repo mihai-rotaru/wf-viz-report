@@ -45,7 +45,7 @@ processes data into information by answering to the 'who', 'what', 'where' and
 answering the 'how' question. Finally, one can arrive to wisdom through an
 understanding of 'why'.
 
-[caption="Figure 1"]
+.Ackoff's model
 image::img/png/ackoff.png[]
 
 === The Information Explosion
@@ -198,7 +198,6 @@ the data (for example, normal distribution). The most common visualisations in
 this context are 'bar charts', 'pie charts' and 'boxplots'. (Icke 2009, p.10)
 
 .Example of a boxplot
-[caption="Figure 2: "]
 image::img/png/boxplot.png[]
 
 Often it is 'viewing relationships' that is the primary goal of the
@@ -210,7 +209,6 @@ especially useful when the dataset has multiple dimensions, by using multiple
 'scatterplots' in parallel.
 
 .Example of a scatterplot
-[caption="Figure 2: "]
 image::img/png/scatterplot.png[]
 
 Numerous visualisations are available for 'picturing data'. Such methods aim to
@@ -223,7 +221,6 @@ as 'star glyphs'.  Other more intuitive techniques include 'heat maps' and 'tag
 clouds'.
 
 .Example of a heat map
-[caption="Figure 2: "]
 image::img/png/heat-map.png[]
 
 'Temporal visualisation' is usually achieved by using 'line graphs' - a simple
@@ -239,7 +236,6 @@ The method described by Tufte can also be successfully employed to represent
 spatial-temporal data.
 
 .Line graph and animation view
-[caption="Figure 2: "]
 image::img/png/time-space-glyph.png[]
 
 The most natural way of achieving 'spatial visualisation' is by using maps,
@@ -257,13 +253,14 @@ methods have been developed and employed in analysis methods such as KDD and
 VDM, the field of 'visual analytics' emerged as it was recognised that the
 human-computer synergy can be taken a step further.
 
-Visual analytics started in the wake of 9/11, with the seminal work of Thomas
-et al which resulted in "Illuminating the Path: The Research and Development
-Agenda for Visual Analytics". The authors provide an overview of the challenges
-faced by data analysts, and highlight the aspects which make necessary a closer
-collaboration between computers and humans in order to cope with them. These
-aspects include the already discussed large datasets, with varying degrees
-of reliability and completeness, but a new element is introduced: 'urgency'.
+Work in the field of visual analytics started in earnest after the tragic
+events of 9/11, with the seminal work of Thomas et al which resulted in
+"Illuminating the Path: The Research and Development Agenda for Visual
+Analytics". The authors provide an overview of the challenges faced by data
+analysts, and highlight the aspects which make necessary a closer collaboration
+between computers and humans in order to cope with them. These aspects include
+the already discussed large datasets, with varying degrees of reliability and
+completeness, but a new element is introduced: 'urgency'.
 
 Thomas et al start off their work by listing a number of scenarios which do not
 only require extracting insight from huge, heterogeneous datasets, but time
@@ -297,7 +294,6 @@ iterative and interactive nature of the process become obvious in this short
 description. This process is illustrated below, based on (Keim, 2008 Fig.2):
 
 .The visual analytics process: S: sources, V: visualisation, H: hypothesis, I: insight.
-[caption="Figure 1: "]
 image::img/png/process.png[]
 
 Requirements Gathering and Analysis
@@ -351,10 +347,47 @@ of the project, but are required - at the moment, this folder contains the
 `freeglut` package.
 
 === Version control
-git
+Version control is standard practice among professional programmers, and it was
+therefore decided that it would be a good idea to put the project under version
+control. Git, "the fast version control system" (http://git-scm.com) was chosen
+mainly due to my familiarity and experience with it. Although the Windows
+implementation suffers from performance and, to a lesser extent, usability
+issues, the benefits a version control system offers were deemed as sufficient
+to outweigh any potential disadvantages.
+
+.The Git repository: viewed with gitg
+image::img/png/git.png[]
+
+The branching model followed by the project, known as git-flow, is described in
+detail here: http://nvie.com/posts/a-successful-git-branching-model. To summarise,
+it involves having two permanent branches: `master` - intended to contain only
+released versions and hotfixes, and `develop` - which is intended to integrate
+changes from 'feature branches'. A feature branch is created for each new feature;
+development for that feature takes place on it's respective branch, without affecting
+unrelated branches. When a sufficient number of features have been accumulated,
+a 'release branch' is created - where the software is finalised, and tagged with
+the new version. Finnally, it is merged into the `master` branch. A `hotfix` branch
+will be created if a bug is discovered which needs an urgent fix; these branches
+will be integrated into both `develop` and `master`.
 
 === Build system
-waf, make, vs
+The main build system is `waf` (http://code.google.com/p/waf), which describes itself
+as "the meta build system". It does, indeed, provide powerful abstractions and can
+be configured for use with almost any programming language. But what made it
+attractive for this project were two main factors:
+
+- it is written in Python, and the build script itself is also a Python script. This
+is very fitting, because I am already quite familiar with Python. This also makes it
+cross-platform.
+- built-in C++ capabilities
+- self-contained - the `waf` build system is distributed as a small Python script,
+and does not have any dependencies - outside Python, of course.
+
+A Visual Studio solution is also maintained. At the moment, this is done manually,
+but this process is likely to be automated in the future, since `waf` can generate
+Visual Studio solution and project files. Also maintained is a `makefile`, for
+use with `make` on Unix systems, but it is likely that support for `make` will be
+dropped, since `waf` can fulfill it's role.
 
 === Unit Testing
 The project is intended to implement 'unit testing' from the start, following a
@@ -374,23 +407,29 @@ avoiding the need of installing additional libraries.
 
 First prototype
 ---------------
-prototype
+Below is a screenshot of the first prototype. It doesn't have much functionality,
+but it does accomplish loading and displaying a map of the world, from vector
+information stored in a *.pov file. 
 
-=== Milestones
-1.0
+.The first prototype
+image::img/png/prototype.png[]
+
+Two main issues become obvious form this screenshot: the lines are interrupted, and
+that the drawn shapes are hollow. These issues have a high priority, and are scheduled
+to be fixed in V0.3 and V0.4, respectively.
 
 References
 ----------
-- Thomas, J et al (2005) "Illuminating the path". Available from: http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf [ accessed 26th of Jan 2012 ]
 - Ackoff, R. L. (1989) "From data to wisdom". Journal of Applied Systems Analysis.
-- Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
-- Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
-- Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
-- Ma, K.-L. et al (2005) "Scientific Discovery through Advanced Visualization"Journal of Physics Conference Series, 2005.
-- Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf [ accessed 26th of Jan 2012 ]
-- Fayyad, U. et al (1996) "From Data Mining to Knowledge Discovery in Databases". AI Magazine, 1996. Available on-line from: http://www.aaai.org/aitopics/assets/PDF/AIMag17-03-2-article.pdf [ accessed 26th of Jan 2012 ]
-- Tufte, E. (1990) "Envisioning Information". Graphics Press.
-- Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
-- Keim, D. A. (2002) "Information Visualization and Visual Data Mining". IEEE Transactions on Visualization and Computer Graphics; Volume 8 Issue 1, January 2002.Available on-line from: http://nm.merz-akademie.de/~jasmin.sipahi/drittes/images/Keim2002.pdf [ accessed 26th of Jan 2012 ]
 - Beck, K. (2002) "Test-Driven Development: By Example". Addison-Wesley.  
+- Fayyad, U. et al (1996) "From Data Mining to Knowledge Discovery in Databases". AI Magazine, 1996. Available on-line from: http://www.aaai.org/aitopics/assets/PDF/AIMag17-03-2-article.pdf [ accessed 26th of Jan 2012 ]
+- Friendly, M. (2006) "Handbook of a Computational Statistics: Data Visualization", volume III. Springer-Verlag, Heidelberg.
+- Icke, I. (2009) "Visual Analytics: A Multi-faceted Overview". CUNY, The Graduate Center. Available on-line from: http://web.cs.gc.cuny.edu/~iicke/academic/icke_visual_analytics_review_2009.pdf [ accessed 26th of Jan 2012 ]
+- Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
+- Keim, D. A. (2002) "Information Visualization and Visual Data Mining". IEEE Transactions on Visualization and Computer Graphics; Volume 8 Issue 1, January 2002.Available on-line from: http://nm.merz-akademie.de/~jasmin.sipahi/drittes/images/Keim2002.pdf [ accessed 26th of Jan 2012 ]
+- Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
+- Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
+- Ma, K.-L. et al (2005) "Scientific Discovery through Advanced Visualization"Journal of Physics Conference Series, 2005.
 - McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
+- Thomas, J et al (2005) "Illuminating the path". Available from: http://nvac.pnl.gov/docs/RD_Agenda_VisualAnalytics.pdf [ accessed 26th of Jan 2012 ]
+- Tufte, E. (1990) "Envisioning Information". Graphics Press.
