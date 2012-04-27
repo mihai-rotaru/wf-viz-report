@@ -565,11 +565,32 @@ required format, it's data will be rendered in the map window.
 .A shapefile and data
 image::img/screenshot_2.jpg[]
 
-
 Chapter 7: Conclusion
 ---------------------
-Conclusion
+The resulting program has become quite large, but I did manage to keep the code
+base ordered, with functionality in the correct files. Even though it is over
+3500 lines of code, it is manageable. Unlike some previous projects, this code
+base did not accrue too much technical debt. This is an important lesson, not
+to deffer refactoring and to neglect coding style. Otherwise, the code base
+will become difficult to manage.
 
+Another lesson is that feature completion times cannot be reliably estimated.
+Sometimes I solved some issues which I thought would be hard in less time than
+expected. But, more often, I ran into issues in places where I had no
+expectation to encounter them, and sometimes they are very difficult to solve.
+This can be especially troublesome when the deadline is quickly approaching.
+
+But the greatest benefit from developing this project is perhaps the experience
+of actually developing a program. When learning programming, people usually solve
+small programming problems; but programs such as this one, which have a certain
+degree of complexity, have a completely different set of challenges.
+
+One such challenge is that complexity does not increase linearly with the components
+that are in the system. When adding or changing a component, one has to consider
+not only the issues pertaining to that particular component, but how will it's 
+interaction with the other components affect the overall system. This can lead to
+subtle, but difficult to find bugs, which often are the cause for unpredicted
+difficulties in developing a project.
 
 References
 ----------
