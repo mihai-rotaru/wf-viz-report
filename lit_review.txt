@@ -1,17 +1,53 @@
 Literature Review
 =================
 
-Introduction
-------------
+Abstract
+--------
+This report comprises the work that went into the research, design and
+development of the author's third year project - including a literature
+review for the field of the application - visual analytics.
+
+The topic was chosen after studying it for another module and becoming
+interested in it. One of the primary goals was to learn about and adopt best
+practices used throughout the industry. This lead to using a version control
+system and a bug tracker from the start. Agile methods were also considered,
+but proved difficult to follow on a school/work schedule.
+
+The goal of this project was to create an application that would enable users
+to browse and analyse statistics about countries, such as the GDP, population
+and national debt. It would need to provide users with a way of interacting
+with the data, for example to view how it changes over time.
+
+The application was designed to be portable, and run on Windows and Linux.
+This affected the design and development process is many ways, as described in
+more detail Chapter 4. One of the salient consequences was the choice
+of the programming language - C++ - and development environment (Msys/MinGW).
+
+After the literature review was completed and requirements established, the
+development process started. It did not always proceed as planned. Some of the
+initial requirements had to be changed, and some components were implemented in
+a different manner than initially intended. Unpredicted difficulties lead to
+major changes and even elimination of some components. These issues are detailed
+in Chapter 5.
+
+As a conclusion, I have to agree with Donald Knuth, "software is hard" (Knuth
+2008). One of the most egregious features of software development is how
+difficult it is to estimate how long it will take to implement a feature,
+and that difficult to eliminate bugs can appear where one expects them the
+least.
+
+Chapter 1: Introduction
+-----------------------
 This coursework has a twofold aim; firstly, to provide a literature review of
 the visual analytics field, with a focus on visualisations which describe
-geographical areas.  Secondly, it provides a description of the work done so
-far for the project, and the prototype which was produced.
+geographical areas.  Secondly, it provides a description of the work done for
+the project, including an overview of the architecture and the development
+process.
 
 The first part starts with an introduction to analytical reasoning, and the
-'road to wisdom'. The next section discusses the type of data wich the
+'road to wisdom'. The next section discusses the type of data which the
 information age produces, and the new challenges it poses for analysts. Ways of
-automated insight extraction from such datastes are described in the next
+automated insight extraction from such datasets are described in the next
 section, followed by a description of 'information visualisation', and how it
 can enhance the process. This leads to the section on 'visual analytics',
 followed by a more specific aspect, concerning 'geo-spatial analysis'. These
@@ -23,14 +59,18 @@ The second main section provides the theoretical background which describes the
 project itself and the development process. Starting with requirements
 gathering and analysis, it continues with a section describing the high-level
 architecture, the employed design patterns and the system's division into
-components.  The following sections describe the infrastructure supporting the
-development process - the version control system, build system and how is unit
-testing implemented. The last section describes the first prototype - what
-challenges were encountered, and how was the architecture altered to
-accommodate changing requirements.
+components and provides the justification for major architecture and design
+decisions.
 
-Visual Analytics
-----------------
+The following sections describe the infrastructure supporting the development
+process - the version control system, build system and how is unit testing
+implemented. The third section describes the first prototype - what challenges
+were encountered, and how was the architecture altered to accommodate changing
+requirements.
+
+
+Chapter 2: Literature Review
+----------------------------
 Visual analytics is defined as the science of analytical reasoning facilitated
 by interactive visual interfaces (Thomas 2005). It enables users to
 synthesize useful information and extract insight from enormous amounts of data
@@ -296,8 +336,10 @@ description. This process is illustrated below, based on (Keim, 2008 Fig.2):
 .The visual analytics process: S: sources, V: visualisation, H: hypothesis, I: insight.
 image::img/png/process.png[]
 
-Requirements Gathering and Analysis
------------------------------------
+
+Chapter 3: Requirements Gathering and Analysis
+----------------------------------------------
+
 As described in the previous section, visual analytics is a very broad topic,
 encompassing numerous sub-fields. Eliciting clear, concise requirements in this
 context is no easy task. After carefully considering the available options and
@@ -319,8 +361,8 @@ low return on investment - in other words, implementing it would be too costly a
 the value it provides does not justify the effort. Other features might be added,
 if they would add value to the project.
 
-Architecture
-------------
+Chapter 4: Research And Design
+-----------------------------
 This project was designed following the 'MVC' ( Model View Controller )
 paradigm. The 'model' is at the core of the application; it maintains state
 information and manages the loaded data. The 'controller' is responsible for
@@ -328,17 +370,65 @@ receiving user input, in the form of mouse and keyboard events; it notifies the
 model and any active views of what actions need to be performed in response. A
 'view' provides the visualisation of a dataset - for example, the GDP of all
 the countries in the world. Multiple views can be active simultaneously.
+The application has four major components, each of which will be discussed in
+more detail in the sections that follow.
 
-.Main components:
-- vector graphics - parsing and rendering basic primitives.
-- views - construct visualisations - heat maps, bar charts, etc.
-- data fetching - automatically discover and fetch data
-- query module - allows users to specify custom queries.
-- statistics - perform statistical computations
-- the user interface
+=== The Graphical User Interface (GUI)
+One of the major architectural decisions when developing an application is the
+choice of a user interface system. The options for GUIs are to either use an
+OS-specific GUI framework, such as the Microsoft Foundation Class library (MFC)
+for Windows, or a cross-platform one - such as Qt (http://qt.nokia.com/products/).
 
-Infrastructure
---------------
+Since this application was designed from the outset to run on Windows and Linux,
+using MFC had to be ruled out. I also decided against Qt - although it is a fine
+library, it is too heavy and complex for this project. Such frameworks are more
+suitable for use in bigger applications, but for small projects it has too much
+overhead and is too big.
+
+The other option is to develop a GUI for OpenGL. Doing this from scratch, is
+not an easy task. I looked for a library that could be used, but did not come
+across anything that I would deem satisfactory. So I decided that I should create
+the windowing system/user interface myself. One thing that needs to be kept in
+mind is that such frameworks can become very complex, and I need to keep it
+simple, so that it doesn't become too complex and prevent me from working on
+the other aspects.
+
+=== Loading Data
+The program is intended to be used for analysing data - so this component is of
+utmost importance. After considering the available options, I decided that XML
+files are the best choice in this case. I considered SQL databases, since I have
+some experience from previous years - SQLite (http://www.sqlite.org/) being my
+top choice for a while, because it is very light, and has very good bindings for
+C\++. I discarded options such as comma separated values, because they are too
+rigid - a more future-proof and flexible options is needed.
+
+Eventually I settled for XML files. Although I always considered XML as being
+too verbose and heavy, I came to appreciate it's features after knowing it
+better during a module we had this year. XML files provide the balance I was
+seeking. In my case, I'm not sure in what format will the data to be used with
+the application be. If I chose an option like SQLite, adapting the application
+to support other formats would involve a lot of effort, even it a plug-in
+architecture is used for the file I/O components.
+
+But XML solves this issue. If the application supports XML, and has to consume
+an SQLite database file, then I can easily write an SQLite script that would
+generate an XML file, which can then be fed to the application. The reverse
+scenario ( generating an SQLite database from XML files ) does not look this
+simple. An added benefit of XML is XSLT - Extensible Stylesheet Language
+Transformations.  If an XML file is not in a format that can be consumed by the
+application, XSLT can be used to generate an acceptable file.
+
+=== Displaying Data
+How the user views and interacts with the data is of paramount importance in
+visual analytics applications. Another property of such applications is that they
+must allow the user to _interact_ with the data, not just view it.
+
+This can be achieved by implementing a GUI element ( also know as 'control' )
+that would allow the user to see a coloured map, that supports interaction
+elements such as panning ( moving the map in any direction ) and zooming.
+
+Chapter 5: Implementation
+-------------------------
 This section discusses how the first prototype was built. The project is laid
 out following a fairly standard folder structure, encountered in many C++
 projects - the source files are placed inside the `src` folder, with the header
@@ -418,6 +508,69 @@ Two main issues become obvious form this screenshot: the lines are interrupted, 
 that the drawn shapes are hollow. These issues have a high priority, and are scheduled
 to be fixed in V0.3 and V0.4, respectively.
 
+Chapter 6: Demonstration
+------------------------
+
+=== Installation
+The software has no dependencies, and does not require the user to download or install
+anything. It uses the freeglut and other libraries, but they are statically linked into
+the executable to avoid such dependency issues.
+
+The software is distributed as a zip file, containing a folder with the
+application. To install it, all that the user needs to do is drag the folder on
+his desktop, or to any other location, and click the executable file. There are
+a few folders and files in the application's directory, but the executable
+should be easy to spot and has a name of the form `wf-viz-VX.Y.exe`, where `X`
+is the major version and `Y` is the minor version number.
+
+The user will be presented with the applications main view:
+
+.How the application looks when it is launched
+image::img/screenshot.jpg[]
+
+It contains two windows: one contains buttons and short explanations to allow
+users to load shapefiles (maps) and data, and the other one actually displays
+the data. The user can click "Load Shapefile" and he will be presented with a
+standard Windows dialog, which asks him to select a `*.shp` or `*.shx` file.
+When the user does this, the shapefile will be loaded into the second window.
+
+.A shapefile was loaded
+image::img/screenshot_1.jpg[]
+
+The user can also load data. To do this, he must click "Load XML Data". An
+important notice about these files, is that they must have the format of
+files available on the World Bank website. They look like this:
+
+-----------
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns:wb="http://www.worldbank.org">
+  <data>
+    <record>
+      <field name="Country or Area" key="GBR">United Kingdom</field>
+      <field name="Item" key="NY.GDP.MKTP.CD">GDP (current US$)</field>
+      <field name="Year">1960</field>
+      <field name="Value">72328047042.1588</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="GBR">United Kingdom</field>
+      <field name="Item" key="NY.GDP.MKTP.CD">GDP (current US$)</field>
+      <field name="Year">1961</field>
+      <field name="Value">76694360635.9159</field>
+    </record>
+-----------
+
+If the selected file is invalid, the application will exit. If it is in the
+required format, it's data will be rendered in the map window.
+
+.A shapefile and data
+image::img/screenshot_2.jpg[]
+
+
+Chapter 7: Conclusion
+---------------------
+Conclusion
+
+
 References
 ----------
 - Ackoff, R. L. (1989) "From data to wisdom". Journal of Applied Systems Analysis.
@@ -428,6 +581,7 @@ References
 - Keim, D. A. et al (2006) "Challenges in visual data analysis". Information Visualization, IV 2006. Tenth International
 - Keim, D. A. (2002) "Information Visualization and Visual Data Mining". IEEE Transactions on Visualization and Computer Graphics; Volume 8 Issue 1, January 2002.Available on-line from: http://nm.merz-akademie.de/~jasmin.sipahi/drittes/images/Keim2002.pdf [ accessed 26th of Jan 2012 ]
 - Keim, D. A. (2008) "Visual Analytics: Scope and Challenges". Lecture Notes in Computer Science.  
+- Knuth, D. (2008) "Donald Knuth: A Life's Work Interrupted". Communications of the ACM. Vol. 51, No. 8. Available on-line from: http://www.dcc.uchile.cl/~vramiro/d/knuth.pdf
 - Lyman, P. et al (2003) "How Much Information?". Berkeley School of Information Management and Systems. Available from: http://www2.sims.berkeley.edu/research/projects/how-much-info-2003 [ accessed 26th of Jan 2012 ]
 - Ma, K.-L. et al (2005) "Scientific Discovery through Advanced Visualization"Journal of Physics Conference Series, 2005.
 - McConnell, S. (2004) "Code Complete: A Practical Handbook of Software Construction", 2nd Edition. Microsoft Press.
